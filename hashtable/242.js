@@ -32,7 +32,8 @@ var isAnagram = function(s, t) {
         }
     }
 
-    for (let [key, value] of record) {
+    for (let key in record) {
+        let value = record[key]
         if (value != 0) {
             return false
         }
